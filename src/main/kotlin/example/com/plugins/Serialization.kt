@@ -12,12 +12,9 @@ fun Application.configureSerialization() {
             setPrettyPrinting()
         }
     }
-//    routing {
-//        get("/json/gson") {
-//                call.respond(mapOf("hello" to "world"))
-//            }
-//        get("/made/reihan") {
-//            call.respond(mapOf("made" to "reihan"))
-//        }
-//    }
+    routing {
+        get("/json/gson") {
+                call.respond(mapOf("hello" to "world"))
+        }
+    }
 }

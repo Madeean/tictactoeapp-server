@@ -9,12 +9,5 @@ fun Application.configureRouting() {
         get("/") {
             call.respondText("Hello World!")
         }
-        get("/made") {
-            call.respondText { "Made Reihan" }
-        }
-        get("/todos/{id}") {
-            val id = call.parameters["id"]
-            call.respondText { "todo list item $id" }
-        }
     }
 }
